@@ -1,0 +1,19 @@
+{
+  "name": "gf-naive-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+   "devDependencies": {
+    "vite-svg-loader": "^5.1.0",
+    "vitepress": "^1.0.2"
+  }
+}
