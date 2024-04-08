@@ -51,9 +51,36 @@ go mod download
 
 ### 修改项目数据库配置
 
-修改项目所依赖的数据库配置文件，具体如何配置请查看goframe[文档](https://goframe.org)
-<img src='../assets/images/20240403220704.png'/>
-<img src='../assets/images/20240403220705.png'/>
+1、修改hack\config.yaml文件gf cli数据库配置
+<img src='../assets/images/0.png'/>
+
+2、在manifest文件夹新建config/config.yaml文件
+
+```yaml
+server:
+  address:     ":8000"
+  openapiPath: "/api.json"
+  swaggerPath: "/swagger"
+
+logger:
+  level : "all"
+  stdout: true
+
+database:
+  logger:
+    level: "all"
+    stdout: true
+  default:
+    debug: true
+    host: "127.0.0.1"
+    port: "3306"
+    user: "root"
+    pass: "123456"
+    name: "数据库名称"
+    type: "mysql"
+```
+
+
 
 ### 开发环境执行
 
